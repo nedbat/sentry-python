@@ -20,7 +20,9 @@ exclude_also = [
 #
 
 [tool.pytest.ini_options]
-addopts = "-vvv -rfEs -s --durations=5 --cov=./sentry_sdk --cov-branch --cov-report= --tb=short --junitxml=.junitxml"
+#addopts = "-vvv -rfEs -s --durations=5 --cov=./sentry_sdk --cov-branch --cov-report= --tb=short --junitxml=.junitxml"
+#addopts = "-qqq --disable-warnings --cov=./sentry_sdk --cov-branch --cov-report= --tb=short --junitxml=.junitxml"
+addopts = "-qqq --disable-warnings --tb=short --junitxml=.junitxml"
 asyncio_mode = "strict"
 asyncio_default_fixture_loop_scope = "function"
 markers = [
